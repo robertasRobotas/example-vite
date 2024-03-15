@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+nav {
+    background-color: lightblue;
+    padding: 5px;
+    text-align: center;
+    img {
+        height: 100px
+    }
+}
+main {
+    display: grid; grid-template-columns: 1fr 4fr;
+    max-width: 1400px;
+    margin: auto;
+}
+.left {
+    text-align: center;
+    padding: 10px;
+}
+.formWrapper {
+    display: flex; flex-direction: column; gap: 10px;
+    margin-bottom: 50px;
+}
+h3 {
+    margin: 0px;
+}
+.active {
+    color: lightblue;
+    cursor:default
+}
+h2 {
+    cursor: pointer;
+}
+#cardWrapper {
+    display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card {
+    text-align: center;
+    position: relative;
+}
+.cardImage {
+    height: 200px
+}
+.fade {
+    transition: 3s;
+    opacity: 0;
+}

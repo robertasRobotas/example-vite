@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./src/images/smallSiteLogo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Goofy ahh zoo</title>
+</head>
+<body>
+
+<nav>
+  <img src="src/images/logo.png" alt="">
+</nav>
+
+<main>
+  <div class="left">
+      <div class="formWrapper">
+        <h3>Add animal</h3>
+        <select name="" id="animalSelect">
+          <option value="" disabled selected hidden>Select animal</option>
+          <option value="Zebra">Zebra</option>
+          <option value="Tiger">Tiger</option>
+          <option value="Elephant">Elephant</option>
+        </select>
+        <input type="text" placeholder="name" disabled id="animalInput1">
+        <input type="text" placeholder="age" disabled id="animalInput2">
+        <input type="text" disabled id="animalInput3">
+        <input type="text" disabled id="animalInput4">
+        <button disabled id="animalSubmitButton">submit</button>
+      </div>
+
+      <div class="formWrapper">
+        <h3>Add zookeeper</h3>
+        <select name="" id="zookeeperGenderSelect">
+          <option value="" disabled selected hidden>Gender?</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <input type="text" placeholder="name" disabled id="zookeeperInput1">
+        <button disabled id="zookeeperSubmitButton">submit</button>
+      </div>
+  </div>
+  <div class="right">
+    <h2><span id="animalCards" class="cardToggle">Animals</span>
+      /
+      <span id="zookeeperCards" class="cardToggle">zookeepers</span>
+    </h2>
+    <div id="cardWrapper">
+    </div>
+  </div>
+</main>
+    
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
